@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import Shop from './components/Shop';
+//importing fakeDb array of objects
 import fakeDb from './fakeDb/fakeDb'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <Shop/>
+      <Shop data={data} />
     </div>
   );
 }

@@ -8,6 +8,20 @@
 .shop{
     padding-top: 4rem;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 2fr;
 
 }
+
+.shop h2{
+    font-size: 2rem;
+}
+
+.laptops{
+    display:grid;
+    grid-template-columns: repeat(3,1fr)
+}
+.cart-container{
+    margin-left: .5rem;
+}
+
+
