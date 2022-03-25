@@ -1,0 +1,13 @@
+.shop-container{
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+.shop{
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
