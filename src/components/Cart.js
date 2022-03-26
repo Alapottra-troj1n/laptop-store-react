@@ -18,20 +18,14 @@ const Cart = ({onCart, setOnCart, data}) => {
     }
     //choose one for me function
     const randomPicker = () => {
-        const randomNumber = Math.floor(Math.random() * 9 );
-        const randomProduct = data[randomNumber];
-        for(const item of onCart){
-            if(item.id === randomProduct.id){
-                console.log('same product detected. running the function again')
-                return randomPicker();
-            }
-        }
+        const randomNumber = Math.floor(Math.random() * 4 );
 
-        if(onCart.length < 4){
-            setOnCart([...onCart, randomProduct])
-        }else{
-            alert('Already Selected 4 Items');
+        if(onCart.length !== 4){
+            alert('Please Select 4 Laptops First');
+            return;
         }
+        const randomProduct = onCart[randomNumber];
+        alert(`Randomly Picked Laptop : ${randomProduct.name}`);
         
     }
     
