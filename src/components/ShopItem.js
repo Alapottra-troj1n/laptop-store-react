@@ -8,9 +8,11 @@ const ShopItem = ({laptop,onCart, setOnCart}) => {
     const addToCartHandler = () => {
         if(onCart.length < 4){
             setOnCart([...onCart, laptop]);
+            
         }else{
             alert('Already Selected 4 Items'); 
         }
+        
         
     }
 

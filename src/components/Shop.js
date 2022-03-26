@@ -21,7 +21,7 @@ const Shop = ({data}) => {
                     </div>
                 </div>
                 
-                <div className="cart-container">
+                <div className="cart-container" id="cart-uid">
                     <h2>Cart</h2>
                     <Cart onCart={onCart} data={data} setOnCart={setOnCart}/>
                 </div>

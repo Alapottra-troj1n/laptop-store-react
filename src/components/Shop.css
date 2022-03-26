@@ -24,4 +24,13 @@
     margin-left: .5rem;
 }
 
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 967px) {
+    .laptops{
+        
+        grid-template-columns: repeat(1,1fr)
+    }
+}
+
 

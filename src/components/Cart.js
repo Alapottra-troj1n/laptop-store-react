@@ -31,6 +31,7 @@ const Cart = ({onCart, setOnCart, data}) => {
     return (
         <div className="cart">
             <div className="cart-details">
+                
             <div className="selected-laptops">
             <h5>Choose 4 Laptops : </h5>
             {onCart.map(laptop => <OnCartItem key={uuidv4()} laptop={laptop} onCart={onCart} setOnCart={setOnCart} /> )}

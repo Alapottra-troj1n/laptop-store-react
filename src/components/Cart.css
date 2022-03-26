@@ -27,3 +27,18 @@
 .reset-cart:hover{
     background-color: rgb(219, 219, 219);
 }
+
+@media screen and (max-width: 967px) {
+.selected-laptops h5{
+    font-size: 1rem;
+}
+
+.cart-details h4{
+    font-size: 1.5rem;
+}
+.cart-actions{
+    text-align: left;
+    margin: 1rem 0;
+}
+
+}

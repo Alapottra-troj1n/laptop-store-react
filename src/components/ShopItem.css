@@ -34,3 +34,12 @@ button{
 .footer button:hover{
     background-color: #C5EDEF;
 }
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 967px) {
+    .img-container img{
+        width: 50%;
+}
+}
+
