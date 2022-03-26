@@ -1,6 +1,6 @@
 # Laptop Store
 
-## Live Link : 
+## Live Link : https://laptop-store-react.netlify.app/
 
 
 
