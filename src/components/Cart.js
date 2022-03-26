@@ -33,7 +33,7 @@ const Cart = ({onCart, setOnCart, data}) => {
             <div className="cart-details">
             <div className="selected-laptops">
             <h5>Choose 4 Laptops : </h5>
-            {onCart.map(laptop => <OnCartItem key={uuidv4()} laptop={laptop} /> )}
+            {onCart.map(laptop => <OnCartItem key={uuidv4()} laptop={laptop} onCart={onCart} setOnCart={setOnCart} /> )}
             </div>
             <h4>Total Price : {grandTotal} </h4>
             </div>
