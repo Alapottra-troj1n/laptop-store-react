@@ -17,13 +17,13 @@ const Shop = ({data}) => {
                 <div className="laptops-container">
                     <h2>Laptops</h2>
                     <div className="laptops">
-                        {data.map(laptop => <ShopItem laptop={laptop} onCart={onCart} setOnCart={setOnCart} />)}
+                        {data.map(laptop => <ShopItem key={laptop.id} laptop={laptop} onCart={onCart} setOnCart={setOnCart} />)}
                     </div>
                 </div>
                 
                 <div className="cart-container">
                     <h2>Cart</h2>
-                    <Cart onCart={onCart} setOnCart={setOnCart}/>
+                    <Cart onCart={onCart} data={data} setOnCart={setOnCart}/>
                 </div>
             </div>
         </div>
