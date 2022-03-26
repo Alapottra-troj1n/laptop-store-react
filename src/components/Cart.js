@@ -19,8 +19,16 @@ const Cart = ({onCart, setOnCart, data}) => {
     //choose one for me function
     const randomPicker = () => {
         const randomNumber = Math.floor(Math.random() * 9 );
+        const randomProduct = data[randomNumber];
+        for(const item of onCart){
+            if(item.id === randomProduct.id){
+                console.log('a')
+                return randomPicker();
+            }
+        }
+
         if(onCart.length < 4){
-            setOnCart([...onCart, data[randomNumber]])
+            setOnCart([...onCart, randomProduct])
         }else{
             alert('Already Selected 4 Items');
         }
