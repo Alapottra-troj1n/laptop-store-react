@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import './App.css';
+import QA from './components/QA';
 import Shop from './components/Shop';
 //importing fakeDb array of objects
 import fakeDb from './fakeDb/fakeDb'
@@ -18,6 +19,10 @@ function App() {
   return (
     <div className="App">
       <Shop data={data} />
+
+      <div className="footer-section">
+        <QA/>
+      </div>
     </div>
   );
 }
