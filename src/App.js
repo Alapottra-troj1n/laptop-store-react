@@ -9,10 +9,9 @@ function App() {
 
   //fetching the data from fakeDb
   const [data, setData] = useState(fakeDb);
+  
 
  
-
-
 
 
 

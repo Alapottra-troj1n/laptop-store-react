@@ -15,20 +15,20 @@ function fakeDb() {
       price: 155000,
     },
     {
-      name: "Microsoft Surface Laptop",
+      name: "Surface Laptop",
       image: "https://www.startech.com.bd/image/cache/catalog/laptop/microsoft/surface-laptop-studio/surface-laptop-studio-01-500x500.jpg",
       id: uuidv4(),
       price: 179000,
     },
     {
-      name: "Gigabyte AERO 15 OLED",
+      name: "Gigabyte AERO 15",
       image:"https://www.startech.com.bd/image/cache/catalog/laptop/gigabyte/aero-15-oled-kc/aero-15-oled-kc-500x500.jpg",
       id: uuidv4(),
       price:206000,
 
     },
     {
-      name: "Lenovo Legion Y740",
+      name: "Lenovo Legion Y",
       image:"https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/Legion-y740/y740-500x500.jpg",
       id: uuidv4(),
       price: 200000,

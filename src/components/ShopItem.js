@@ -1,7 +1,17 @@
 import React from 'react';
 import './ShopItem.css'
 
-const ShopItem = ({laptop}) => {
+const ShopItem = ({laptop,onCart, setOnCart}) => {
+
+    const addToCartHandler = () => {
+        if(onCart.length < 4){
+            setOnCart([...onCart, laptop]);
+        }else{
+            alert('Already Selected 4 Items'); 
+        }
+        
+    }
+
     return (
         <div className="shop-item">
             <div className="img-container">
@@ -12,7 +22,7 @@ const ShopItem = ({laptop}) => {
                 <p className="price">{laptop.price} BDT</p>
             </div>
             <div className="footer">
-                <button>Add to Cart</button>
+                <button onClick={addToCartHandler} >Add to Cart</button>
             </div>
         </div>
     );

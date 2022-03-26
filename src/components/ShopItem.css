@@ -17,6 +17,20 @@
     font-weight: 600;
 }
 .price{
+    color:#49c3ab;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+.details{
+    margin: 1rem 0;
+}
+button{
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.footer button:hover{
+    background-color: #C5EDEF;
 }
