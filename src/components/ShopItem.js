@@ -7,7 +7,17 @@ const ShopItem = ({laptop,onCart, setOnCart}) => {
 
     const addToCartHandler = () => {
         if(onCart.length < 4){
+
+            for(const item of onCart){
+               if(item.id === laptop.id){
+                   alert(`${item.name} is already on the cart.`)
+                   return;
+               }
+               
+            }
+            
             setOnCart([...onCart, laptop]);
+           
             
         }else{
             alert('Already Selected 4 Items'); 

@@ -4,7 +4,6 @@ import React from 'react';
 import './OnCartItem.css'
 
 const OnCartItem = ({laptop, onCart, setOnCart}) => {
-
     const cartItemDelete = () => {
         const newItems = onCart.filter(item => item.id !== laptop.id);
         setOnCart(newItems);
