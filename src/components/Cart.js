@@ -22,7 +22,7 @@ const Cart = ({onCart, setOnCart, data}) => {
         const randomProduct = data[randomNumber];
         for(const item of onCart){
             if(item.id === randomProduct.id){
-                console.log('a')
+                console.log('same product detected. running the function again')
                 return randomPicker();
             }
         }
